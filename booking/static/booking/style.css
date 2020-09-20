@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Satisfy|Mountains+of+Christmas|Pacifico&display=swap");
+body{
+  text-align: center;
+}
+.container-fluid{
+  margin-bottom: 200px;
+}
+#contact-bg2{
+  background-image: url("images/nope.jpg");
+  margin-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.lightStatus{
+  color: white;
+  font-family: Verdana;
+}
+#btn1{
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:500px;
+  width:100%;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:100%;
+}
+#map {
+    width: 100%;
+    height: 400px;
+}
+/* NAVBAR */
+.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
+.navbar-expand-md .navbar-nav .dropdown-menu{
+  border-top:3px solid #fed136;
+}
+.dropdown-item:hover{background-color:#fed136;color:#fff;}
+nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+}
+
+.navbar{
+border-radius:0;
+}
+  
+.shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #212529;
+}
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+.bg-overlay {
+  position: relative;
+  background-position: center center;
+  background-size: cover; }
+#cen{
+  margin-bottom: 200px;
+}
+/* Preloader */
+#loader{
+  height:100%;
+  width:100%;
+  background:rgba(0, 0, 0, 1);
+  position:fixed;
+  left:0;
+  top:0;
+ }
+
+.preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('https://cdn.dribbble.com/users/563824/screenshots/3907093/escalade.gif');
+   background-repeat: no-repeat; 
+   background-color: #FFF;
+   background-position: center;
+}
+/* Side navbar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.padding-50{
+  padding-left: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* BANNER IMAGES ON INDEX PAGE */
+.banner{
+  background-image:url('images/back.jpg');
+  text-align: center;
+  color: #fff;
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.banner-text{
+  padding:200px 0 150px 0;
+}
+.banner-heading{
+  font-family: 'Satisfy', cursive;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 100px;
+  margin-bottom: 30px;
+  color:#fff;
+  text-shadow: 0 0 10px #FF0000, 0 0 5px #0000FF;
+}
+.banner-sub-heading{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-bottom: 50px;
+  color:#fff;
+  text-shadow: 0 0 10px #FF0000, 0 0 5px #0000FF;
+}
+
+.btn-banner{
+  padding:5px 20px;
+  border-radius:10px;
+  font-weight:700;
+  line-height:1.5;
+  text-align:center;
+  color:#fff;
+  text-transform:uppercase;
+}
+.text-intro{
+  width:90%;
+  margin:auto;
+  text-align:center;
+  padding-top:30px;
+}
+
+img {
+  height: auto;
+  max-width: 100%; }
+a,
+a:hover,
+a:focus {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: 'Pacifico'; }
+/* footer */
+.footer-area {
+  padding: 30px 0;
+  background-color: #000000;
+  text-align: center;
+  font-size: 12px;
+}
+.footer-area .container .row{
+  display: flex;
+}
+.footer-area .footer-nav li a {
+  color: #898888;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 20px; }
+.footer-area .footer-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer-area .copywrite-text {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #A5A5A5; }
+.footer-area .copywrite-text a {
+  color: #A5A5A5;
+  font-size: 12px; }
+.footer-area .copywrite-text a:hover, .footer-area .copywrite-text a:focus {
+  color: #fff; 
+}
+/* :: 15.0 Breadcumb Area CSS */
+#contact-bg1{
+  background-image: url(images/contact.jpg);
+  margin-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.breadcumb-area {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 385px; }
+  @media only screen and (max-width: 767px) {
+    .breadcumb-area {
+      height: 270px; } }
+  .breadcumb-area .bradcumbContent {
+    position: absolute;
+    background-color: #fff;
+    width: 552px;
+    bottom: 0;
+    left: 50%;
+    z-index: 100;
+    text-align: center;
+    padding-top: 40px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    @media only screen and (max-width: 767px) {
+      .breadcumb-area .bradcumbContent {
+        width: calc(100% - 60px);
+        padding-top: 30px; } }
+    .breadcumb-area .bradcumbContent p {
+      line-height: 1.5;
+      font-size: 16px;
+      color: #5f5f5f; }
+    .breadcumb-area .bradcumbContent h2 {
+      font-size: 30px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 0; }
+      @media only screen and (max-width: 767px) {
+        .breadcumb-area .bradcumbContent h2 {
+          font-size: 18px;
+          letter-spacing: 5px; } }
+
+.tm-tag-line {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    min-height:600px;
+    background-image: url("images/free.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tm-tag-line > h2{
+  padding: 200px 50px 0px 50px;
+  color: white;
+  font-family: 'Satisfy', cursive;
+  text-shadow: 0 0 10px black, 0 0 5px black;
+}
+.freeclass-head{
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+}
+
+.freeclass{
+  margin: 100px 0px 100px 0px;
+}
+.news-pub{
+  color: white;
+  text-shadow: 0 0 10px black, 0 0 5px black;
+  text-align: right;
+  font-family: 'Satisfy', cursive;
+  padding: 60px 100px 0px 30px;
+}
