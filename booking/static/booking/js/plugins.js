@@ -1,6 +1,6 @@
 //auto increment
 var firebaseConfig = {
-  apiKey: "AIzaSyD9v4wGnOfvPj5hFvT9RFHr51RHh3VhzxE",
+  apiKey: "#",
   authDomain: "smart-parking-51b36.firebaseapp.com",
   databaseURL: "https://smart-parking-51b36.firebaseio.com",
   projectId: "smart-parking-51b36",
