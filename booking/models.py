@@ -6,6 +6,8 @@ class prime(models.Model):
 	no_of_slot = models.CharField(max_length=20)
 	def __str__(self):
 		return(self.location)
+
+
 class parking(models.Model):
 	"""docstring for parking"""
 	park_loc = models.ForeignKey(prime,on_delete = models.CASCADE)
