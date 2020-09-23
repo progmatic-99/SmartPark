@@ -1,7 +1,10 @@
+from django.contrib.auth import authenticate, login
 from django.shortcuts import render
-from .models import prime
 from django.views import generic
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic import FormView
+
+from .login import LoginForm
+from .models import prime
 
 
 # help section or contact
@@ -22,3 +25,24 @@ class IndexView(generic.ListView):
 # booking page
 def advance(request):
     return render(request, "booking/advance.html")
+
+
+class LoginView(FormView):
+    form_class = LoginForm
+    template_name = "booking/login.html"
+
+    def get(self, request):
+        form = self.form_class(None)
+        return render(request, self.template_name, {"form": form})
+
+    def post(self, request):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(username=username, password=password)
+            print(user)
+            if user is not None:
+                login(request, user)
+                return render(request, 'booking/dashboard.html', {"user":user})
+        return render(request, self.template_name, {"form": form})
