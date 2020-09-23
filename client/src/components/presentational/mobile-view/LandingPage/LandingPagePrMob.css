@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* height: 640;
+width: 360; */
+.lp-o-container-m{
+    width: 100%;
+    position: relative;
+    background-image: url(../../../../images/background.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* left: -519px; */
+    background-position: -570px;
+}
+.lp-i-container-m{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #090E18;
+    opacity: 0.85;
+}
+.lp-brand-name-m{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 7.81vh;
+}
+.lp-brand-name-m h1{
+    font-weight: bold;
+    font-size: 13vmin;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    letter-spacing: 0.01em;
+}
+.lp-auth-container-m{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    /* margin-top: 13.59vh; */
+}
+.lp-login, .lp-signup{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 61.66vw;
+    height: 11.87vh;
+    text-align: center;
+    font-size: 6vmin;
+    color: white;
+    border: 1px solid #aaaaaa;
+    background-color: #aaaaaa;
+    border-radius: 40px;
+    margin-bottom: 8.43vh;
+}
+.lp-login{
+    border: 1px solid #5452F6;
+    background-color: #5452F6;
+}
+.lp-footer-m{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.lp-brand-logo-m{
+    height: 8.75vh;
+    /* width: 13.33vw; */
+    display: flex;
+    
+}
+.lp-brand-moto-m{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 6vmin;
+    letter-spacing: 0.05em;
+    color: #C1A6FA;
+    margin-bottom: 4.21vh;
+
+}
+
+

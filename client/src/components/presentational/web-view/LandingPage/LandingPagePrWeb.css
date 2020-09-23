@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.login-o-container{
+    width: 100%;
+    background-image: url(../../../../images/background.jpg) ;
+    position: relative;
+    /* background-position: center; */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    height: 100vh;
+
+}
+.login-i-container{
+    width: 100%;
+    position: absolute;
+    background-color: #090E18;
+    opacity: 0.85;
+    width: 100%;
+    height: 100vh;
+
+}
+.login-navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 6vh;
+    font-weight: 600;
+}
+.brand-logo{
+    width: 4%;
+    margin-left: 10.46%;
+    margin-right: 33.8%;
+}
+.nav-opt{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    color: #AAADFA;
+    
+}
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+.nav-opt p{
+    transition-property: border-bottom;
+    transition-delay: 0.0s;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 2vh;
+    font-size: 1.7vw;
+}
+.active{
+    border-bottom: 3px solid #5452F6;
+    border-radius: 10px;
+}
+.login-text{
+    width: 60%;
+    position: absolute;
+    top: 29.16vh;
+    left: 10.46vw;
+
+}
+.login-text > h1{
+    font-size: 7vmax;
+    /* color: rgb(194, 194, 194); */
+    color: white;
+    opacity: 1;
+    font-weight: 600;
+    letter-spacing: 1%;
+    /* top: 28.16%; */
+    margin-bottom: 2vh;
+    /* line-height: 15vh; */
+}
+.login-text > h3{
+    font-size: 3vmax;
+    color: #AAADFA;
+    letter-spacing: 5%;
+    font-weight: 500;
+    /* line-height: 20vh; */
+
+}
+
+
+
