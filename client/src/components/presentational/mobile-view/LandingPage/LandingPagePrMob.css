@@ -51,7 +51,7 @@ width: 360; */
     width: 100%;
     /* margin-top: 13.59vh; */
 }
-.lp-login, .lp-signup{
+.lp-login, .lp-signup {
     display:flex;
     align-items: center;
     justify-content: center;
