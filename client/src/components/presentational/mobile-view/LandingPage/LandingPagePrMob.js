@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import logo from '../../../../images/logo.svg'
-import './LandingPagePrMob.css'
+import logo from '../../../../images/logo.svg';
+import './LandingPagePrMob.css';
+import { Link } from 'react-router-dom';
 class LandingPagePrMob extends Component{
-
     render(){
         return (
             <div className = 'lp-o-container-m'>
@@ -12,10 +12,14 @@ class LandingPagePrMob extends Component{
                     </div>
                     <div className='lp-auth-container-m'>
                         <div className='lp-login'>
-                            <h3>LOGIN</h3>
+                            <Link to = '/login'>
+                                <h3>LOGIN</h3>                            
+                            </Link>
                         </div>
                         <div className='lp-signup'>
-                            <h3>SIGN UP</h3>
+                            <Link to='/signup'>
+                                <h3>SIGN UP</h3>
+                            </Link>
                         </div>
                     </div>
                     <div className='lp-footer-m'>

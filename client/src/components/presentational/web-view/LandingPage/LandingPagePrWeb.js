@@ -27,8 +27,8 @@ class LoginPage extends Component{
                         </div>
                         <div className = "nav-opt">
                             <Link to='#' className = 'text-link'><p id = 'about' onClick = {this.handleClick} className = 'active'>ABOUT</p></Link> 
-                            <Link to='#' className='text-link'><p id='login' onClick={this.handleClick}>LOGIN</p></Link>                            
-                            <Link to='#' className='text-link'><p id='signup' onClick={this.handleClick}>SIGNUP</p></Link>
+                            <Link to='/login' className='text-link'><p id='login' onClick={this.handleClick}>LOGIN</p></Link>                            
+                            <Link to='/signup' className='text-link'><p id='signup' onClick={this.handleClick}>SIGNUP</p></Link>
                         </div>
                     </div>
                     <div className = "login-text">
