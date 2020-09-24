@@ -10,7 +10,10 @@
 
 # production
 /build
+<<<<<<< HEAD
 /.netlify
+=======
+>>>>>>> master
 
 # misc
 .DS_Store

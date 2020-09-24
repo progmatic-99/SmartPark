@@ -51,7 +51,11 @@ width: 360; */
     width: 100%;
     /* margin-top: 13.59vh; */
 }
+<<<<<<< HEAD
 .lp-login, .lp-signup {
+=======
+.lp-login, .lp-signup{
+>>>>>>> master
     display:flex;
     align-items: center;
     justify-content: center;
