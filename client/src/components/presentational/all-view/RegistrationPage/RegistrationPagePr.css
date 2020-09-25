@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    background-image: url("../../../../images/background.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 9px;
+    line-height: 2.1rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 6px 6px lightslategrey;
+    width: 60%;
+    background-color: rgb(228, 226, 226, 0.39);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width: 400px)
+{   .main-div{
+        width: 96%;
+    }
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-color: #090E18;
+    opacity: 0.85;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    padding: 15px 15px 9px 15px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1.8px solid black;
+    border-radius: 30px;
+    background-color: #AAADFA;
+}
+.container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-column: span 2;
+    row-gap: 1rem;
+    column-gap: 6rem;
+}
+button{
+    grid-column: span;
+    padding: 12px;
+    border-radius: 20px;
+    background-color:#AAADFA;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+}
+Form{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    color:red;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+label{
+    letter-spacing: 0.2rem;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+input{
+    margin-left: 0;
+    border-radius: 9px;
+    padding: 6px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.field{
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    float: right;
+    padding: 12px;
+} 
