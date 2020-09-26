@@ -96,7 +96,9 @@ const RegistrationPage = () => {
                             <button type="submit" className="btn">Submit</button>
                         </div>
                 </div>
+                
             </Form>
+                <p>Already a SmartPark user?<a href="../login"> Login</a></p>
             </div>
            </div>
           </div>
