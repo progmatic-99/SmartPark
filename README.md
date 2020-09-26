@@ -7,7 +7,7 @@
 
 #### Steps to run the django app:-
 
-> These steps are for **Linux bases OS**
+> These steps are for **Linux based OS**
 
 1. Create a virtual env with `python3 -m venv env`
 2. Activate virtual env with `. env/bin/activate`
