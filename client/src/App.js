@@ -4,7 +4,9 @@ import Navbar from './components/layouts/Navbar';
 import LandingPage from './components/container/LandingPage';
 import LoginPage from './components/presentational/all-view/LoginPage/LoginPagePr';
 import RegistrationPage from './components/presentational/all-view/RegistrationPage/RegistrationPagePr';
+// import FireBase from './components/FireBase'
 import './App.css'
+
 function App() {
   return (
     <Router>
@@ -13,6 +15,7 @@ function App() {
         <Route path='/login' exact component={LoginPage} />
         <Route path='/signup' exact component={RegistrationPage} />
         {/* <Route path='/' exact component={LoginPage} /> */}
+        {/* <Route path='/firebase' exact component={FireBase} /> */}
         
       </div>
     </Router>
