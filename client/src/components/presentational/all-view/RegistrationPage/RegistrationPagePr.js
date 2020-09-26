@@ -33,39 +33,76 @@ const RegistrationPage = () => {
                 }, 400);
             }}
         >
+            
+            <div className="content">
+                <div className="image">
+                    <div class="background">
             <Form>
-                <div>
-                    <label htmlFor="firstName">First Name</label>
-                    <Field name="firstName" type="text" />
-                    <ErrorMessage name="firstName" />
+               <div className="main-div">
+                    <header className="heading">Sign Up</header>
+                        <div className="container">
+                            <div className="form-element">
+                                <label htmlFor="firstName">First Name</label>
+                                <div className="field">
+                                    <Field name="firstName" type="text" />
+                                </div>
+                                <div className="error">
+                                    <ErrorMessage name="firstName"  />
+                                </div>
+                            </div>
+                            <div className="form-element">
+                                <label htmlFor="lastName">Last Name</label>
+                                <div className="field">
+                                    <Field name="lastName" type="text" />
+                                </div>
+                                <div className="error">
+                                    <ErrorMessage name="lastName" />
+                                </div>
+                            </div>
+                            <div className="form-element">
+                                <label htmlFor="email">Email</label>
+                                <div className="field">
+                                    <Field name="email" type="email" />
+                                </div>
+                                <div className="error">
+                                    <ErrorMessage name="email" />
+                                </div>
+                            </div>
+                            <div className="form-element">
+                                <label htmlFor="phoneNo">Phone</label>
+                                <div className="field">
+                                    <Field name="phoneNo" type="number" />
+                                </div>
+                                <ErrorMessage name="phoneNo"/>
+                            </div>
+                            <div className="form-element">
+                                <label htmlFor="password">Password</label>
+                                <div className="field"> 
+                                    <Field name="password" type="password" />
+                                </div>
+                                <div className="error">
+                                    <ErrorMessage name="password" />
+                                </div>
+                            </div>
+                            <div className="form-element">
+                                <label htmlFor="confirmPassword">Confirm Password</label>
+                                <div className="field">     
+                                    <Field name="confirmPassword" type="password" />
+                                </div>
+                                <div className="error">
+                                     <ErrorMessage name="confirmPassword" />
+                                </div>
+                            </div>
+                            <button type="submit" className="btn">Submit</button>
+                        </div>
                 </div>
-                <div>
-                    <label htmlFor="lastName">Last Name</label>
-                    <Field name="lastName" type="text" />
-                    <ErrorMessage name="lastName" />
-                </div>
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <Field name="email" type="email" />
-                    <ErrorMessage name="email" />
-                </div>
-                <div>
-                    <label htmlFor="phoneNo">Phone</label>
-                    <Field name="phoneNo" type="number" />
-                    <ErrorMessage name="phoneNo" />
-                </div>
-                <div>
-                    <label htmlFor="password">Password</label>
-                    <Field name="password" type="password" />
-                    <ErrorMessage name="password" />
-                </div>
-                <div>
-                    <label htmlFor="confirmPassword">Confirm Password</label>
-                    <Field name="confirmPassword" type="password" />
-                    <ErrorMessage name="confirmPassword" />
-                </div>
-                <button type="submit">Submit</button>
+                
             </Form>
+                <p>Already a SmartPark user?<a href="../login"> Login</a></p>
+            </div>
+           </div>
+          </div>
+            
         </Formik>
     );
 };
