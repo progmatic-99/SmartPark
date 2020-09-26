@@ -18,7 +18,9 @@ const RegistrationPage = () => {
                 email: Yup.string()
                     .email('Invalid email address')
                     .required('Required'),
-                phoneNo: Yup.string().matches(phoneRegExp, 'Invalid Phone Number'),
+                phoneNo: Yup.string()
+                    .matches(phoneRegExp, 'Invalid Phone Number')
+                    .required('No Phone Number Provided'),
                 password: Yup.string()
                     .min(4, 'Password is too short - should be 5 chars minimum.')
                     .required('No password provided.'),
