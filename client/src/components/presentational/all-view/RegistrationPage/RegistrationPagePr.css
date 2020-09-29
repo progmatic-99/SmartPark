@@ -55,7 +55,7 @@
     background-color: rgb(224, 219,219, 0.39);
     border-radius: 30px;
 }
-.container{
+.signup-container{
     margin-top: 1rem;
     display: grid;
     grid-template-columns: auto;
@@ -63,7 +63,7 @@
     row-gap: 1rem;
     column-gap: 6rem;
 }
-button{
+.signup-btn{
     grid-column: span;
     padding: 12px;
     border: none;
@@ -75,11 +75,11 @@ button{
     letter-spacing: 0.3rem;
     font-weight: bold;
 }
-button:hover{
+.signup-btn:hover{
     background-color: rgb(57, 167, 204);
     color: #ffffff;
 }
-Form{
+.signup-form{
     min-height: 90vh;
     display: flex;
     justify-content: center;
@@ -91,7 +91,7 @@ Form{
     font-size: 0.9rem;
     font-weight: 900;
 }
-label{
+.signup-label{
     letter-spacing: 0.2rem;
     text-align: left;
     font-weight: bold;
@@ -118,7 +118,7 @@ input:hover{
     float: right;
     padding: 12px;
 } 
-p{
+.already-user{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,12 +126,12 @@ p{
     letter-spacing: 0.05rem;
     margin-top: 1rem;
 }
-p a{
+.already-user a{
     text-decoration: none;
     color: blue;
     margin-left: 0.3rem;
     font-weight: bold;
 }
-p a:hover{
+.already-user a:hover{
     color: rgb(57, 167, 204);
 }

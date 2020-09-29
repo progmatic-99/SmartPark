@@ -39,12 +39,12 @@ const RegistrationPage = () => {
             <div className="content">
                 <div className="image">
                     <div class="background">
-            <Form>
+            <Form className="signup-form">
                <div className="main-div">
                     <header className="heading">Sign Up</header>
-                        <div className="container">
+                        <div className="signup-container">
                             <div className="form-element">
-                                <label htmlFor="firstName">First Name</label>
+                                <label htmlFor="firstName" className="signup-label">First Name</label>
                                 <div className="field">
                                     <Field name="firstName" type="text" />
                                 </div>
@@ -53,7 +53,7 @@ const RegistrationPage = () => {
                                 </div>
                             </div>
                             <div className="form-element">
-                                <label htmlFor="lastName">Last Name</label>
+                                <label htmlFor="lastName" className="signup-label">Last Name</label>
                                 <div className="field">
                                     <Field name="lastName" type="text" />
                                 </div>
@@ -62,7 +62,7 @@ const RegistrationPage = () => {
                                 </div>
                             </div>
                             <div className="form-element">
-                                <label htmlFor="email">Email</label>
+                                <label htmlFor="email" className="signup-label">Email</label>
                                 <div className="field">
                                     <Field name="email" type="email" />
                                 </div>
@@ -71,14 +71,14 @@ const RegistrationPage = () => {
                                 </div>
                             </div>
                             <div className="form-element">
-                                <label htmlFor="phoneNo">Phone</label>
+                                <label htmlFor="phoneNo" className="signup-label">Phone</label>
                                 <div className="field">
                                     <Field name="phoneNo" type="number" />
                                 </div>
                                 <ErrorMessage name="phoneNo"/>
                             </div>
                             <div className="form-element">
-                                <label htmlFor="password">Password</label>
+                                <label htmlFor="password" className="signup-label">Password</label>
                                 <div className="field"> 
                                     <Field name="password" type="password" />
                                 </div>
@@ -87,7 +87,7 @@ const RegistrationPage = () => {
                                 </div>
                             </div>
                             <div className="form-element">
-                                <label htmlFor="confirmPassword">Confirm Password</label>
+                                <label htmlFor="confirmPassword" className="signup-label">Confirm Password</label>
                                 <div className="field">     
                                     <Field name="confirmPassword" type="password" />
                                 </div>
@@ -95,12 +95,12 @@ const RegistrationPage = () => {
                                      <ErrorMessage name="confirmPassword" />
                                 </div>
                             </div>
-                            <button type="submit" className="btn">Submit</button>
+                            <button type="submit" className="signup-btn">Submit</button>
                         </div>
                 </div>
                 
             </Form>
-                <p>Already a SmartPark user?<a href="../login"> Login</a></p>
+                <p className="already-user">Already a SmartPark user?<a href="../login"> Login</a></p>
             </div>
            </div>
           </div>

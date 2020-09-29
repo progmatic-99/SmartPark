@@ -61,22 +61,34 @@ class LoginPage extends Component {
                     }, 400);
                 }}
             >
-                <div>
-                    <Form>
-                        <div>
-                            <label htmlFor="email">Email</label>
-                            <Field name="email" type="email" />
-                            <ErrorMessage name="email" />
-                        </div>
-                        <div>
-                            <label htmlFor="password">Password</label>
-                            <Field name="password" type="password" />
-                            <ErrorMessage name="password" />
-                        </div>
-                        <button type="submit">Submit</button>
+               
+                <div className="login-content">
+                    <div className="login-main-div">
+                        
+                        <Form className="login-form">
+                            <div className="login-container">
+                            <header className="login-header">Login</header>
+                                <div className="login-form-element">
+                                    <label htmlFor="email" className="login-label">Email</label>
+                                    <Field name="email" type="email" />
+                                    <div className="error">
+                                        <ErrorMessage name="email" />
+                                    </div>
+                                </div>
+                            
+                                <div className="login-form-element">
+                                    <label htmlFor="password" className="login-label">Password</label>
+                                    <Field name="password" type="password" />
+                                    <div className="error">
+                                        <ErrorMessage name="password" />
+                                    </div>
+                                 </div>
+                                <button type="submit" className="login-btn">Login</button>
+                            </div>
+                        
                     </Form>
-                    <p>OR</p>
-                    <div>
+                    <p className="login-para1">OR</p>
+                    <div className="google-auth">
                         {this.state.isLogined ?
                             <GoogleLogout
                                 clientId={CLIENT_ID}
@@ -94,9 +106,11 @@ class LoginPage extends Component {
                             />
                         }
                         {/* {this.state.accessToken ? <h5>Your Access Token: <br /><br /> {this.state.accessToken}</h5> : null} */}
-
+                        </div>
+                          <p className="login-para2">New User?<a href="../signup">Sign-Up</a></p>
+                        </div>
                     </div>
-                </div>
+                
 
             </Formik>
 
