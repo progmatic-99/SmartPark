@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.navbar{
+    background-color: #f0f0e9; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-links ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.navbar-links li{
+    list-style: none;
+    display: block;
+    padding: 1.5rem;
+    letter-spacing: 0.15rem;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    color: #5452F6;
+
+}
+.logo{
+    font-size: 0.3rem;
+    margin-left: 3rem;
+}
+.input-field > input{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1.2rem;
+    box-shadow: 3px 3px rgb(187, 184, 184);
+    border:none;
+    border-radius: 1.2rem;
+    margin: auto;
+    width: 60%;
+    margin-top: 2.1rem;
+    letter-spacing: 0.15rem;
+}
+.map{
+    margin-top: 2.1rem;
+    background-color: #f0f0e9;
+    height: 45vh;
+    cursor: zoom-in;
+}
+.buttons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+
+}
+.buttons .btn{
+    padding: 1.2rem;
+    margin-right: 3rem;  
+    box-shadow: 3px 3px rgb(187, 184, 184);
+    border:none;
+    border-radius: 1.2rem;
+    background-color: #5452F6;
+    margin: auto;
+    width: 45%;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.buttons .btn:hover{
+    background-color: #797df7;
+}
