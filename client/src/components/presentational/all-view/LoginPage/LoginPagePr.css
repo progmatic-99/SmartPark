@@ -31,6 +31,7 @@
     font-size: 30px;
     border-bottom: 6px solid #AAADFA;
     border-radius: 30px;
+    margin-bottom: 1rem;
 }
 .login-form{
     display: flex;
@@ -72,6 +73,7 @@
     text-align: left;
     font-weight: bold;
     color: black;
+    padding-right: 1rem;
 }
 .error{
     color:red;
