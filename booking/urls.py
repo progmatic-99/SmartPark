@@ -1,13 +1,11 @@
-from django.conf.urls import url
-from django.urls import path
+from django.urls import include, path
+from rest_framework import routers
+from .views import UserView
 
-from . import views
 
-app_name = "booking"
+router = routers.DefaultRouter()
+router.register(r"user", UserView, "users")
 
 urlpatterns = [
-    url(r'^login/$', views.LoginView.as_view(), name='login'),
-    path("", views.IndexView.as_view(), name="index"),
-    path("contact/", views.contact, name="contact"),
-    path("advance/", views.advance, name="advance"),
+    path("", include(router.urls)),
 ]
