@@ -1,3 +1,7 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/react,python,django
+# Edit at https://www.toptal.com/developers/gitignore?templates=react,python,django
+
 ### Django ###
 *.log
 *.pot
@@ -120,6 +124,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+pythonenv*
 
 # Spyder project settings
 .spyderproject
@@ -141,3 +146,82 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+
+# profiling data
+.prof
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+
+# C extensions
+
+# Distribution / packaging
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+
+# Installer logs
+
+# Unit test / coverage reports
+
+# Translations
+
+# Django stuff:
+
+# Flask stuff:
+
+# Scrapy stuff:
+
+# Sphinx documentation
+
+# PyBuilder
+
+# Jupyter Notebook
+
+# IPython
+
+# pyenv
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+
+# Celery stuff
+
+# SageMath parsed files
+
+# Environments
+
+# Spyder project settings
+
+# Rope project settings
+
+# mkdocs documentation
+
+# mypy
+
+# Pyre type checker
+
+# pytype static type analyzer
+
+# profiling data
+
+### react ###
+.DS_*
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
