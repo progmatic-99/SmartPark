@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import * as firebase from 'firebase'
+//import * as firebase from 'firebase'
 
-var firebaseConfig = {
+/*var firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
   authDomain: "smart-park-290414.firebaseapp.com",
   databaseURL: "https://smart-park-290414.firebaseio.com",
@@ -18,6 +18,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+*/
 
 ReactDOM.render(
   <React.StrictMode>
